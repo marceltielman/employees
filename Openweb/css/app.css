@@ -1,0 +1,66 @@
+#filter{}
+#filter ul{
+    list-style-type: none;
+    padding: 0;
+}
+#filter ul li{
+    padding-bottom: 5px;
+}
+#filter ul li input{
+    margin-right: 10px;
+}
+#filter ul li label{
+    font-weight: 400;
+}
+
+.thumbnail{
+    position: relative;
+    overflow: hidden;
+}
+.thumbnail>.thumbnail-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+.thumbnail>.thumbnail-container>.thumbnail-img{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail .caption h3{
+    margin-top: 0;
+    font-size: 20px;
+}
+.thumbnail .caption h5{
+    font-weight: 400;
+}
+
+.thumbnail>.employee-bio{
+    display: block;
+    position: absolute;
+    background-color: rgba(217, 237, 247, 0.9);
+    top: 1000px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 1s ease-in-out;
+}
+.thumbnail>.employee-bio>p{
+    padding: 15px 10px;
+    font-size: 13px;
+}
+.thumbnail:hover>.employee-bio{
+    display: block;
+    top: 0;
+}
+
+@media (max-width: 568px) {
+    .col-xs-6{
+        width: 100%;
+    }
+}
